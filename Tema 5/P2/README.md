@@ -22,4 +22,4 @@ Usar Yast para unir la MV al dominio del PDC.
 <li>Activar Crear home del usuario.
 <li>Pulsamos "Aceptar". Es posible que se instalen algunos paquetes que hacen falta para seguir.
 
-![Comprobaciones] (https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/1)%20Unirse%20al%20dominio.png)
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/1)%20Unirse%20al%20dominio.png)

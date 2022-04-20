@@ -17,7 +17,7 @@
 Usar Yast para unir la MV al dominio del PDC.
 
 <li>Yast -> Pertenencia a dominio de Windows (Unirse a un dominio)
-<li>Poner el nombre largo del dominio. Por ejemplo "ruiz42dom.curso2021".
+<li>Poner el nombre largo del dominio. Por ejemplo "hernandez26.curso2022".
 <li>Activar la Autenticación SMB.
 <li>Activar Crear home del usuario.
 <li>Pulsamos "Aceptar". Es posible que se instalen algunos paquetes que hacen falta para seguir.

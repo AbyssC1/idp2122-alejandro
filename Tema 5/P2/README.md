@@ -33,7 +33,7 @@ Usar Yast para unir la MV al dominio del PDC.
    
 <li> Entramos en el dominio
    
-![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/3Uniser%20al%20dominio%20con%20administrador.png) 
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/4Conectado%20correctamente.png) 
    
 <p>Una vez iniciada la sesión ejecutar los comandos de comprobación:</p>
 

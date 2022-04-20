@@ -29,4 +29,28 @@ Usar Yast para unir la MV al dominio del PDC.
 
 <li>Iniciar sesión en el equipo GNU/Linux usando un usuario del dominio.
 
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/3Uniser%20al%20dominio%20con%20administrador.png)
+   
+<li> Entramos en el dominio
+   
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/3Uniser%20al%20dominio%20con%20administrador.png) 
+   
+<p>Una vez iniciada la sesión ejecutar los comandos de comprobación:</p>
 
+<li>whoami, esto debe devolver DOMINIO\USERNAME que ha iniciado sesión.
+<li>pwd, para consultar el directorio actual.
+<li>cat /etc/passwd | grep USERNAME, esto debe devolver vacío, indicando que el usuario no está definido como usuario local, por tanto, debe ser un usuario del dominio.
+
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/7Comprobaciones%20dentro%20del%20dominio%20de%20opensuse.png) 
+   
+<h2>Recursos compartidos</h2>
+   
+<p>Podemos acceder al recurso compartido del Window Server (PDC) de la siguiente forma:
+
+<li>Iniciar un explorador de archivos.
+<li>Escribir lo siguiente en la barra de ruta que está en la parte superior, por ejemplo: smb://172.18.26.21/perfiles$/
+   <p> <code> Las barras \\ se cambian a // ya que es linux, en este caso OpenSuse. </code> </p>
+   
+ ![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/8Entra%20el%20V5.png) 
+   
+   

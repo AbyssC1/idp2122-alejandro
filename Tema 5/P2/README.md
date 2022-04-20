@@ -24,7 +24,7 @@ Usar Yast para unir la MV al dominio del PDC.
 
 ![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/1Unirse%20al%20dominio.png)
    
-<h2>Abrir sesión en el cliente<h2>
+<h2>Abrir sesión en el cliente</h2>
 <li>Asegurarse que los usuarios del dominio no tienen restricciones de inicio de sesión.
 
 <li>Iniciar sesión en el equipo GNU/Linux usando un usuario del dominio.

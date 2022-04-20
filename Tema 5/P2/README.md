@@ -11,7 +11,7 @@
 <li>host NOMBRE-EQUIPO-PDC.NOMBRE-DOMINIO, por ejemplo "host alejandroWS.hernandez26dom.curso2022"
 <li>host www.nba.com
 
-![Image text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/Comprobaciones.png)
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/Comprobaciones.png)
 
 <h2>Unirse al dominio</h2>
 Usar Yast para unir la MV al dominio del PDC.
@@ -22,4 +22,4 @@ Usar Yast para unir la MV al dominio del PDC.
 <li>Activar Crear home del usuario.
 <li>Pulsamos "Aceptar". Es posible que se instalen algunos paquetes que hacen falta para seguir.
 
-![alt text] (https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/1)%20Unirse%20al%20dominio.png)
+![Comprobaciones] (https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P2/1)%20Unirse%20al%20dominio.png)

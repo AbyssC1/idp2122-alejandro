@@ -2,7 +2,7 @@
 
 <h2> Introducción </h2>
 <li>HORA: La fecha/hora y la zona horaria de la máquina debe ser igual que la del Windows Server (PDC). que tenemos en el PDC (Windows Server).</li>
-<li>NOBRE DEL EQUIPO: "hernandezg".
+<li>NOBRE DEL EQUIPO: "hernandez26g".
 <li>VIRTUALBOX: GNU/Linux y PDC, deben estar en la misma red, por lo que es aconsejable configurar la red de las máquinas virtuales en modo puente (El modo "Red interna" también funcionará bien).
 <li>Interfaz de RED: Recordar que las máquinas (Servidor y cliente) deben tener la configuración de red estática. Configurar la red con IP estática.
 <li>Servidores DNS: Configurar el cliente GNU/Linux para tener dos servidores DNS. Esto es, DNS1=172.18.26.21, y DNS2=1.1.1.1.

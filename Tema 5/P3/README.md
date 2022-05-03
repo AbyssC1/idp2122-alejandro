@@ -79,7 +79,7 @@
 
 
 <h2> Comprobamos </h2>
-![usuario yoda](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/13%20Usuario%20yoda%20icono%20de%20red.png)
+![yoda](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/13%20Usuario%20yoda%20icono%20de%20red.png)
 
 
 <h1>2. Paquete MSI</h1>

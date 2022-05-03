@@ -11,5 +11,14 @@
   
   ![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/1%20Unidades%20Organizativa%20jedis%20y%20siths.png)
   
+  <h2>1.2 Crear GPO's</h2>
   
+<li>Ir a Herramientas -> Administración de directivas de grupo </li>
+<li>Dentro de la OU de los jediXX -> Botón derecho -> crear la GPO gpo_jedi26. </li>
+<li>Dentro de la OU de los sithXX -> Botón derecho -> crear la GPO gpo_sith26. </li>
+  
+![GPO_jedi26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/2%20Creacion%20de%20gpo_jedis.png)
+
+
+![GPO_sith26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/3%20Creacion%20de%20gpo_siths.png)
   

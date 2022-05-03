@@ -78,16 +78,21 @@
 ![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/12%20Comprobacion%20de%20directivas%20de%20siths26.png)
 
 
-<h2> Comprobamos </h2>
-![yoda](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/13%20Usuario%20yoda%20icono%20de%20red.png)
-
-
 <h1>2. Paquete MSI</h1>
 
+<h2>2.2 Crear el paquete MSI con EMCO Software</h2>
 
+<li>Ir a la MV WIndows10.</li>
+<li>Instalar el programa: https://emcosoftware.com/msi-package-builder</li>
+<li>Ir al Windows Server.</li>
+<li>Copiar el paquete MSI en la carpeta E:\softwareXX\firefox\.</li>
 
+<h1>3. Aplicar directiva de Equipo</h1>
+<h2>3.1 Crear nueva GPO en el servidor</h2>
 
+![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/15%20paquete%20msi.png)  
 
+<h2> Instalación </h2>
 
+![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/16%20instalacion%20de%20firefox%20MSI.png)  
 
-  

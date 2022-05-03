@@ -90,9 +90,9 @@
 <h1>3. Aplicar directiva de Equipo</h1>
 <h2>3.1 Crear nueva GPO en el servidor</h2>
 
-![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/15%20paquete%20msi.png)  
+![Comprobación](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/15%20paquete%20msi.png)  
 
 <h2> Instalación </h2>
 
-![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/16%20instalacion%20de%20firefox%20MSI.png)  
+![instalación](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/16%20instalacion%20de%20firefox%20MSI.png)  
 

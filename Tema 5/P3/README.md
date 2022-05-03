@@ -36,7 +36,7 @@
 <li>Prohibir el acceso al Panel de control</li>
 <p>En la sección Configuración de usuario / Directivas / Plantillas administrativas / Escritorio ( User configuration / Administrative Templates / Active Desktop)</p>
 <li>Ocultar el icono Ubicaciones de red del escritorio.</li>
-<p>En la sección Configuración de usuario / Directivas / Plantillas administrativas / Componentes de Windows / Explorador de Windows (User configuration / Administrative Templates / Windows Components / Windows Explorer)</p>
+<p>En la sección Configuración de usuario / Directivas / Plantillas administrativas / Componentes de Windows / Explorador de Windows (User configuration / Administrative Templates / Windows Components / Windows Explorer).</p>
 <li>Ocultar estas unidades específicas en Mi PC (Hide these specified drives in My Computer) o Impedir el acceso a las unidades desde Mi PC (Prevent Access to drives from my computer). Elegir un combinación adecuada como bloquear las unidades A y B (Restrict A y B drives only).</li>
-<li>Quitar (Conectar a unidad de red y Desconectar de unidad de red)</li>
+<li>Quitar (Conectar a unidad de red y Desconectar de unidad de red).</li>
   

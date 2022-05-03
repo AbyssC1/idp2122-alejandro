@@ -56,4 +56,27 @@
 
 
 ![ocultar icono de ubicaiones de red](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/10%20Ocultar%20el%20icono%20de%20Ubicaciones%20de%20red%20del%20escritorio.png)
+<p> </p>
+
+
+<h2>1.5 Comprobar que se aplican las directiva</h2>
+
+<p>Al terminar de configurar las directivas, hacemos lo siguiente:</p>
+
+<li>Ir al PDC.</li>
+<li>Abrir consola como administrador.</li>
+<li>Ejecutar gpupdate /force, para forzar las actualizaciones de las directivas. En algunos casos, después de definir una política, ésta tarda un tiempo en activarse, pero usando el comando anterior, nos aseguramos de que este paso de activación se realice inmediatamente.</li>
+<li>Ir a la herramienta Administración de Directivas de Grupo.</li>
+<li>Seleccionar la GPO que queremos consultar -> Configuración.</li>
+<li>Capturar imagen del resumen de la configuración de cada una de las directivas creadas. Esta pestaña debe mostrar las opciones que hemos usado para configurar nuestra directiva.</li>
+<li>Ir a una máquina cliente. Reiniciar la máquina.</li>
+<li>Entrar con un usuario jedi y luego un usuario sith, para comprobar los distintos efectos que producen la aplicación de las directivas.</li>
+
+![Comprobación de directivas jedis26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/11%20Comprobacion%20%20de%20directivas%20de%20jedis26.png)
+
+
+![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/12%20Comprobacion%20de%20directivas%20de%20siths26.png)
+
+
+
   

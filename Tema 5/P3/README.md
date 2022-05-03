@@ -7,7 +7,7 @@
            <li>En el panel izquierzo, hacer click derecho sobre el nombre de nuestro dominio. Elegir Nuevo -> Crear Unidad Organizativa </li>
       <li>      Crear las OU (Unidades Organizativas) siguientes: jedis26 y siths26. </li>
   <li>Los usuarios (obiwan y yoda) que teníamos creados en Usuarios, los movemos a la OU de jedis.</li>
-  <li>Los usuarios (maul y vader) que teníamos creados en Usuarios, los movemos a la OU de siths.</li>
+  <li>Los usuarios (maul y vader) que teníamos creados en Usuarios, los movemos a la OU de siths.</li><p></p>
   
   ![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/1%20Unidades%20Organizativa%20jedis%20y%20siths.png)
   
@@ -15,7 +15,7 @@
   
 <li>Ir a Herramientas -> Administración de directivas de grupo </li>
 <li>Dentro de la OU de los jediXX -> Botón derecho -> crear la GPO gpo_jedi26. </li>
-<li>Dentro de la OU de los sithXX -> Botón derecho -> crear la GPO gpo_sith26. </li>
+<li>Dentro de la OU de los sithXX -> Botón derecho -> crear la GPO gpo_sith26. </li><p></p>
   
 ![GPO_jedi26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/2%20Creacion%20de%20gpo_jedis.png)
 

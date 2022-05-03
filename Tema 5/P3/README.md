@@ -9,5 +9,5 @@
   <li>Los usuarios (obiwan y yoda) que teníamos creados en Usuarios, los movemos a la OU de jedis.</li>
   <li>Los usuarios (maul y vader) que teníamos creados en Usuarios, los movemos a la OU de siths.</li>
   
-  
+  ![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/1%20Unidades%20Organizativa%20jedis%20y%20siths.png)
   

@@ -70,12 +70,23 @@
 <li>Seleccionar la GPO que queremos consultar -> Configuración.</li>
 <li>Capturar imagen del resumen de la configuración de cada una de las directivas creadas. Esta pestaña debe mostrar las opciones que hemos usado para configurar nuestra directiva.</li>
 <li>Ir a una máquina cliente. Reiniciar la máquina.</li>
-<li>Entrar con un usuario jedi y luego un usuario sith, para comprobar los distintos efectos que producen la aplicación de las directivas.</li>
+<li>Entrar con un usuario jedi y luego un usuario sith, para comprobar los distintos efectos que producen la aplicación de las directivas.</li><p></p>
 
 ![Comprobación de directivas jedis26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/11%20Comprobacion%20%20de%20directivas%20de%20jedis26.png)
 
 
 ![Comprobación de directivas siths26](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/12%20Comprobacion%20de%20directivas%20de%20siths26.png)
+
+
+<h2> Comprobamos </h2>
+![usuario yoda](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/13%20Usuario%20yoda%20icono%20de%20red.png)
+
+
+<h1>2. Paquete MSI</h1>
+
+
+
+
 
 
 

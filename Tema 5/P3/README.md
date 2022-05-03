@@ -38,5 +38,19 @@
 <li>Ocultar el icono Ubicaciones de red del escritorio.</li>
 <p>En la sección Configuración de usuario / Directivas / Plantillas administrativas / Componentes de Windows / Explorador de Windows (User configuration / Administrative Templates / Windows Components / Windows Explorer).</p>
 <li>Ocultar estas unidades específicas en Mi PC (Hide these specified drives in My Computer) o Impedir el acceso a las unidades desde Mi PC (Prevent Access to drives from my computer). Elegir un combinación adecuada como bloquear las unidades A y B (Restrict A y B drives only).</li>
-<li>Quitar (Conectar a unidad de red y Desconectar de unidad de red).</li>
+<li>Quitar (Conectar a unidad de red y Desconectar de unidad de red).</li><p></p>
+
+![Icono de red](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/4%20Quitar%20icono%20de%20red.png)
+
+
+![Quitar el menú de ejecutar](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/5%20Quitar%20el%20men%C3%BA%20Ejecutar%20del%20menu%20inicio.png)
+
+
+![No buscar archivosr](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/7%20No%20buscar%20archivos.png)
+
+
+![No buscar programas](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/8%20No%20buscar%20programas.png)
+
+
+![Prohibir el acesso a panel de control](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/9%20prohibir%20el%20acceso%20al%20panel%20de%20control.png)
   

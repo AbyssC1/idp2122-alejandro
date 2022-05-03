@@ -53,4 +53,7 @@
 
 
 ![Prohibir el acesso a panel de control](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/9%20prohibir%20el%20acceso%20al%20panel%20de%20control.png)
+
+
+![ocultar icono de ubicaiones de red](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T5%20P3/10%20Ocultar%20el%20icono%20de%20Ubicaciones%20de%20red%20del%20escritorio.png)
   

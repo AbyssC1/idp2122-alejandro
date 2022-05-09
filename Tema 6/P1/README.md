@@ -77,6 +77,5 @@
 
 ![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P1/6%20instalando%20con%20el%20xml.png)
 
-<h2>Comprobamos</h2></p>
 
-![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P1/5%20instalando%20autoyast%20con%20el%20xml.png)
+

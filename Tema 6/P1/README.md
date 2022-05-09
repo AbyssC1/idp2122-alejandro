@@ -69,7 +69,7 @@
 <li>Iniciamos Power-iso y abrimos el fichero ISO de OpenSUSE.</li>
 <li>Añadir el fichero XML dentro del directorio raíz de la ISO.</li></p>
 
-![Comprobaciones]()
+![Comprobaciones](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P1/7%20comprobacion%20del%20xml%20en%20el%20iso.png)
 
 
 <h2>Instalación desatendida desde la ISO</h2>

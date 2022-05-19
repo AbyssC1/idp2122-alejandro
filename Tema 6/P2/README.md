@@ -22,6 +22,5 @@ vagrant box add BOXNAME, descargar la caja que necesitamos a través de vagrant.
 vagrant box list, lista las cajas/imágenes disponibles actualmente en nuestra máquina.
 
 > vagrant box list
-BOXNAME (virtualbox, 0)
 
-asdasdasd
+> BOXNAME (virtualbox, 0)

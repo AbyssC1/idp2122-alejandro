@@ -24,3 +24,11 @@ vagrant box list, lista las cajas/imágenes disponibles actualmente en nuestra m
 > vagrant box list
 
 > BOXNAME (virtualbox, 0)
+
+# 1.2 Directorio
+
+Crear un directorio para nuestro proyecto. Donde XX es el número de cada alumno:
+~~~
+mkdir alejandro26-va1box.d
+cd alejandro26-vagrant1
+~~~

@@ -23,3 +23,5 @@ vagrant box list, lista las cajas/imágenes disponibles actualmente en nuestra m
 
 > vagrant box list
 BOXNAME (virtualbox, 0)
+
+asdasdasd

@@ -6,11 +6,11 @@
 
 # Instalar Vagrant
 
--Instalar Vagrant. La instalación vamos a hacerla en una máquina real.
--Hay que comprobar que las versiones de Vagrant y VirtualBox son compatibles entre sí.
--vagrant version, para comprobar la versión actual de Vagrant.
--VBoxManage -v, para comprobar la versión actual de VirtualBox.
--Crear el alias va='vagrant'.
+- Instalar Vagrant. La instalación vamos a hacerla en una máquina real.
+- Hay que comprobar que las versiones de Vagrant y VirtualBox son compatibles entre sí.
+- vagrant version, para comprobar la versión actual de Vagrant.
+- VBoxManage -v, para comprobar la versión actual de VirtualBox.
+- Crear el alias va='vagrant'.
 
 ### Proyecto: Añadir cajas
 
@@ -54,9 +54,9 @@ end
 
 Vamos a crear una MV nueva y la vamos a iniciar usando Vagrant:
 
--Debemos estar dentro de nombre-alumnoXX-va1box.d.
--vagrant up, para iniciar una nueva instancia de la máquina.
--vagrant ssh: Conectar/entrar en nuestra máquina virtual usando SSH.
+- Debemos estar dentro de alejandro26-va1box.d.
+- vagrant up, para iniciar una nueva instancia de la máquina.
+- vagrant ssh: Conectar/entrar en nuestra máquina virtual usando SSH.
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/3%20Vagrant%20up%20(Mediana).jpg)
 

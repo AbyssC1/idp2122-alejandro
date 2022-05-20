@@ -295,3 +295,23 @@ Incluir en el fichero Vagrantfile las configuraciones necesarias para:
 
 - La MV de VirtualBox debe tener el nombre vagrant26-20alejandro26.
 - La memoria RAM de la MV en VirtualBox debe ser de 2048 MiB.
+
+# Caja Windows
+
+## Windows con vagrant
+
+- Crear una MV Windows usando vagrant.
+- Comprobar
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/27.png)
+
+# Limpiar
+
+Cuando terminemos la práctica, ya no nos harán falta las cajas (boxes) que tenemos cargadas en nuestro repositorio local. Por tanto, podemos borrarlas para liberar espacio en disco:
+
+- vagrant box list, para consultar las cajas disponibles.
+- vagrant box remove BOXNAME, para eliminar una caja BOXNAME de nuestro repositorio local.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/29.png)
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/28.png)

@@ -80,7 +80,7 @@ Ahora vamos a hacer otro proyecto añadiendo redirección de puertos.
 
 En la máquina real:
 
-- Crear carpeta nombre-alumnoXX-va3port.d.
+- Crear carpeta alejandro26-va3port.d.
 - Entrar en el directorio.
 - Configurar Vagrantfile para usar nuestra caja BOXNAME y hostname = "alejandro26-vagrant3".
 - Modificar el fichero Vagrantfile, de modo que el puerto 4226 del sistema anfitrión sea enrutado al puerto 80 del ambiente virtualizado.
@@ -89,3 +89,21 @@ En la máquina real:
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/6%20mkdir%20alejandro26-va3port.d%20(Mediana).jpg)
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/7%20Configuracion%20vagrant%20file%202%20(Mediana).jpg)
+
+Incluir en el fichero Vagrantfile las configuraciones necesarias para:
+
+- La MV de VirtualBox debe tener el nombre vagrant26-port.
+- La memoria RAM de la MV en VirtualBox debe ser de 2048 MiB.
+
+Levantar la MV podemos hace vagrant up pero también time vagrant up para medir el tiempo que se tarda en levantar la MV. El añadir el comando time COMMAND delante de un comando nos calcula el tiempo que tarda en ejecutarse dicho comandos/programa (COMMAND).
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/8%20creamos%20fichero%20en%20maquina%20real%20(Mediana).jpg)
+
+# Entramos en la MV
+
+- Entramos en la MV en la máquina virtual (vagrant ssh).
+- Instalamos Apache2.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/9%20entramos%20con%20ssh%20y%20descargamos%20el%20vagrant%20(Mediana).jpg)
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/10%20instalamos%20apache2%20(Mediana).jpg)

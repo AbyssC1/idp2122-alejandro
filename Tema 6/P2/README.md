@@ -35,3 +35,15 @@ cd alejandro26-vagrant1
 ~~~
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/1%20Configuracion%20vagrant%20maquina%20real%20(Mediana).jpg)
+
+A partir de ahora vamos a trabajar dentro de esta carpeta.
+
+Crear un fichero nuevo llamado Vagrantfile con el siguiente contenido:
+
+~~~
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.hostname = "alejandro26-va1box"
+  config.vm.provider "virtualbox"
+end
+~~~

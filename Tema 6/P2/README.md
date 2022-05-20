@@ -47,3 +47,17 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox"
 end
 ~~~
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/2%20Configuracion%20Vagrand%20(Mediana).jpg)
+
+# 1.3 Comprobar
+
+Vamos a crear una MV nueva y la vamos a iniciar usando Vagrant:
+
+-Debemos estar dentro de nombre-alumnoXX-va1box.d.
+-vagrant up, para iniciar una nueva instancia de la máquina.
+-vagrant ssh: Conectar/entrar en nuestra máquina virtual usando SSH.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/3%20Vagrant%20up%20(Mediana).jpg)
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/4%20Vagrant%20ssh%20(Mediana).jpg)

@@ -34,4 +34,4 @@ mkdir alejandro26-va1box.d
 cd alejandro26-vagrant1
 ~~~
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/1%20Configuracion%20vagrant%20maquina%20real%20(Mediana).png)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/1%20Configuracion%20vagrant%20maquina%20real%20(Mediana).jpg)

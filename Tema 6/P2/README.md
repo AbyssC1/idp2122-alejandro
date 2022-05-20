@@ -114,7 +114,7 @@ Para confirmar que hay un servicio a la escucha en 4567:
 
 - Ir a la máquina real.
 - vagrant port para ver la redirección de puertos de la máquina Vagrant.
-- Abrir el navegador web con el URL http://127.0.0.1:42XX. En realidad estamos accediendo al puerto 80 de nuestro sistema virtualizado.
+- Abrir el navegador web con el URL http://127.0.0.1:4226. En realidad estamos accediendo al puerto 80 de nuestro sistema virtualizado.
 - nmap -Pn localhost
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/11%20apache2.png)
@@ -180,3 +180,49 @@ Incluir en el fichero Vagrantfile las configuraciones necesarias para:
 - La memoria RAM de la MV en VirtualBox debe ser de 2048 MiB.
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/14%20vagrant%20configuracion.png)
+
+# Comprobamos
+
+- vagrant up, para crear la MV. Podremos notar, al iniciar la máquina, que en los mensajes de salida se muestran mensajes que indican cómo se va instalando el paquete de Apache que indicamos.
+
+- Para verificar que efectivamente el servidor Apache ha sido instalado e iniciado, abrimos navegador en la máquina real con URL http://127.0.0.1:4226
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/16%20comprobacion%20de%20que%20funciona%20el%20script.png)
+
+# Proyecto: Suministro mediante Puppet
+
+Puppet es un orquestador. Sirve para aprovisionar las máquinas locales o remotas sin usar scripting.
+
+# Preparativos
+
+- Crear directorio nombre-alumnoXX-va5puppet.d como nuevo proyecto Vagrant.
+
+- Modificar el archivo Vagrantfile de la siguiente forma:
+
+~~~
+Vagrant.configure("2") do |config|
+  ...
+  config.vm.hostname = "alejandro26-va5puppet"
+  ...
+  # Nos aseguramos de tener Puppet en la MV antes de usarlo.
+  config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y puppet"
+
+  # Hacemos aprovisionamiento con Puppet
+  config.vm.provision "puppet" do |puppet|
+    puppet.manifest_file = "alejandro26.pp"
+  end
+ end
+~~~
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/17%20configuracion%20vagrant.png)
+
+- Crear la carpeta manifests.
+- Crear el fichero manifests/alejandro26.pp, con las órdenes/instrucciones Puppet necesarias para instalar el software que elijamos. Ejemplo:
+
+~~~
+package { 'neofetch':
+  ensure => 'present',
+}
+~~~
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/18%20alejandro26pp.png)

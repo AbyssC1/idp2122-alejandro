@@ -107,3 +107,76 @@ Levantar la MV podemos hace vagrant up pero también time vagrant up para medir 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/9%20entramos%20con%20ssh%20y%20descargamos%20el%20vagrant.png)
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/10%20instalamos%20apache2.png)
+
+# Comprobar
+
+Para confirmar que hay un servicio a la escucha en 4567:
+
+- Ir a la máquina real.
+- vagrant port para ver la redirección de puertos de la máquina Vagrant.
+- Abrir el navegador web con el URL http://127.0.0.1:42XX. En realidad estamos accediendo al puerto 80 de nuestro sistema virtualizado.
+- nmap -Pn localhost
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/11%20apache2.png)
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/12%20nmap.png)
+
+# Proyecto: Suministro mediante shell script
+
+Una de los mejores aspectos de Vagrant es el uso de herramientas de suministro. Esto es, ejecutar "una receta" o una serie de scripts durante el proceso de arranque del entorno virtual para instalar, configurar y personalizar un sin fin de aspectos del SO del sistema anfitrión.
+
+- vagrant halt, apagamos la MV.
+- vagrant destroy y la destruimos para volver a empezar.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/13%20apagar%20y%20destruir%20la%20mv.png)
+
+# Crear ficheros
+
+Ahora vamos a suministrar a la MV un pequeño script para instalar Apache.
+
+Ejemplo:
+
+~~~
+20alejandro26-va4script.d
+├── html
+│   └── index.html
+├── install_apache.sh
+└── Vagrantfile
+~~~
+
+- Crear directorio alejandro26-va4script.d para nuestro proyecto.
+- Entrar en dicha carpeta.
+- Crear la carpeta html y crear fichero html/index.html con el siguiente contenido:
+
+~~~
+<h1>Proyecto Vagrant4 Scripting</h1>
+<p>FECHA-ACTUAL</p>
+<p>Nombre-del-alumnoXX</p>
+~~~
+
+- Crear el script install_apache.sh, dentro del proyecto con el siguiente contenido:
+
+~~~
+!/usr/bin/env bash
+echo "[INFO] Script de instalación de apache2 de [alejandro26]"
+apt update
+apt install -y apache2
+echo "[INFO] Fin del script: $(date)"
+~~~
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/15%20script%20y%20index.png)
+
+# Vagrantfile
+
+Incluir en el fichero de configuración Vagrantfile lo siguiente:
+
+- config.vm.hostname = "alejandro26-va4script"
+- config.vm.provision :shell, :path => "install_apache.sh", para -  indicar a Vagrant que debe ejecutar el script install_apache.sh dentro del entorno virtual.
+- config.vm.synced_folder "html", "/var/www/html", para sincronizar la carpeta exterior html con la carpeta interior. De esta forma el fichero "index.html" será visible dentro de la MV.
+
+Incluir en el fichero Vagrantfile las configuraciones necesarias para:
+
+- La MV de VirtualBox debe tener el nombre vagrant26-script.
+- La memoria RAM de la MV en VirtualBox debe ser de 2048 MiB.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/14%20vagrant%20configuracion.png)

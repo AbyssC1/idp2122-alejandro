@@ -34,7 +34,7 @@ mkdir alejandro26-va1box.d
 cd alejandro26-vagrant1
 ~~~
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/1%20Configuracion%20vagrant%20maquina%20real%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/1%20Configuracion%20vagrant%20maquina%20real.png)
 
 A partir de ahora vamos a trabajar dentro de esta carpeta.
 
@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
 end
 ~~~
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/2%20Configuracion%20Vagrand%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/2%20Configuracion%20Vagrand.png)
 
 # Comprobar
 
@@ -58,9 +58,9 @@ Vamos a crear una MV nueva y la vamos a iniciar usando Vagrant:
 - vagrant up, para iniciar una nueva instancia de la máquina.
 - vagrant ssh: Conectar/entrar en nuestra máquina virtual usando SSH.
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/3%20Vagrant%20up%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/3%20Vagrant%20up.png)
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/4%20Vagrant%20ssh%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/4%20Vagrant%20ssh.png)
 
 # Eliminamos la MV
 
@@ -70,7 +70,7 @@ Vamos a crear una MV nueva y la vamos a iniciar usando Vagrant:
 - vagrant status, consultar el estado actual de la máquina virtual.
 - vagrant destroy, para eliminar la máquina virtual (No los ficheros de configuración).
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/5%20exit%20vagrant%20halt%20vagrant%20status%20vagrant%20destroy%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/5%20exit%20vagrant%20halt%20vagrant%20status%20vagrant%20destroy.png)
 
 # Proyecto: Redirección de puertos
 
@@ -86,9 +86,9 @@ En la máquina real:
 - Modificar el fichero Vagrantfile, de modo que el puerto 4226 del sistema anfitrión sea enrutado al puerto 80 del ambiente virtualizado.
 - config.vm.network :forwarded_port, host: 4226, guest: 80.
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/6%20mkdir%20alejandro26-va3port.d%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/6%20mkdir%20alejandro26-va3port.d.png)
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/7%20Configuracion%20vagrant%20file%202%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/7%20Configuracion%20vagrant%20file%202.png)
 
 Incluir en el fichero Vagrantfile las configuraciones necesarias para:
 
@@ -97,13 +97,13 @@ Incluir en el fichero Vagrantfile las configuraciones necesarias para:
 
 Levantar la MV podemos hace vagrant up pero también time vagrant up para medir el tiempo que se tarda en levantar la MV. El añadir el comando time COMMAND delante de un comando nos calcula el tiempo que tarda en ejecutarse dicho comandos/programa (COMMAND).
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/8%20creamos%20fichero%20en%20maquina%20real%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/8%20creamos%20fichero%20en%20maquina%20real.png)
 
 # Entramos en la MV
 
 - Entramos en la MV en la máquina virtual (vagrant ssh).
 - Instalamos Apache2.
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/9%20entramos%20con%20ssh%20y%20descargamos%20el%20vagrant%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/9%20entramos%20con%20ssh%20y%20descargamos%20el%20vagrant.png)
 
-![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/10%20instalamos%20apache2%20(Mediana).jpg)
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/10%20instalamos%20apache2.png)

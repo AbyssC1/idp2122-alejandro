@@ -1,8 +1,8 @@
 # Vagrant con VirtualBox
 
--Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados.
--Originalmente se desarrolló para VirtualBox y para sistemas de configuración tales como Chef, Salt y Puppet. Sin embargo desde la versión 1.1 Vagrant es capaz de trabajar con múltiples proveedores, como VMware, Amazon EC2, LXC, DigitalOcean, etc.2
--Aunque Vagrant se ha desarrollado en Ruby se puede usar en multitud de proyectos escritos en otros lenguajes.
+- Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados.
+- Originalmente se desarrolló para VirtualBox y para sistemas de configuración tales como Chef, Salt y Puppet. Sin embargo desde la versión 1.1 Vagrant es capaz de trabajar con múltiples proveedores, como VMware, Amazon EC2, LXC, DigitalOcean, etc.2
+- Aunque Vagrant se ha desarrollado en Ruby se puede usar en multitud de proyectos escritos en otros lenguajes.
 
 # Instalar Vagrant
 
@@ -18,14 +18,14 @@ Existen muchos repositorios desde donde podemos descargar la cajas de Vagrant (I
 
 OJO: Sustituir BOXNAME por ubuntu/bionic64
 
-vagrant box add BOXNAME, descargar la caja que necesitamos a través de vagrant.
-vagrant box list, lista las cajas/imágenes disponibles actualmente en nuestra máquina.
+- vagrant box add BOXNAME, descargar la caja que necesitamos a través de  vagrant.
+- vagrant box list, lista las cajas/imágenes disponibles actualmente en nuestra máquina.
 
 > vagrant box list
 
 > BOXNAME (virtualbox, 0)
 
-# 1.2 Directorio
+# Directorio
 
 Crear un directorio para nuestro proyecto. Donde XX es el número de cada alumno:
 
@@ -50,7 +50,7 @@ end
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/2%20Configuracion%20Vagrand%20(Mediana).jpg)
 
-# 1.3 Comprobar
+# Comprobar
 
 Vamos a crear una MV nueva y la vamos a iniciar usando Vagrant:
 
@@ -61,3 +61,31 @@ Vamos a crear una MV nueva y la vamos a iniciar usando Vagrant:
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/3%20Vagrant%20up%20(Mediana).jpg)
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/4%20Vagrant%20ssh%20(Mediana).jpg)
+
+# Eliminamos la MV
+
+- exit para salir fuera de la MV.
+- Ahora estamos en la máquina real.
+- vagrant halt, para apagar la máquina virtual.
+- vagrant status, consultar el estado actual de la máquina virtual.
+- vagrant destroy, para eliminar la máquina virtual (No los ficheros de configuración).
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/5%20exit%20vagrant%20halt%20vagrant%20status%20vagrant%20destroy%20(Mediana).jpg)
+
+# Proyecto: Redirección de puertos
+
+Ahora vamos a hacer otro proyecto añadiendo redirección de puertos.
+
+# Creamos los ficheros
+
+En la máquina real:
+
+- Crear carpeta nombre-alumnoXX-va3port.d.
+- Entrar en el directorio.
+- Configurar Vagrantfile para usar nuestra caja BOXNAME y hostname = "alejandro26-vagrant3".
+- Modificar el fichero Vagrantfile, de modo que el puerto 4226 del sistema anfitrión sea enrutado al puerto 80 del ambiente virtualizado.
+- config.vm.network :forwarded_port, host: 4226, guest: 80.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/6%20mkdir%20alejandro26-va3port.d%20(Mediana).jpg)
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/Mediana/7%20Configuracion%20vagrant%20file%202%20(Mediana).jpg)

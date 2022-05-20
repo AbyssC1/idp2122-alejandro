@@ -226,3 +226,72 @@ package { 'neofetch':
 ~~~
 
 ![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/18%20alejandro26pp.png)
+
+# Proyecto: Caja personalizada
+
+En los apartados anteriores hemos descargado una caja/box de un repositorio de Internet, y la hemos personalizado. En este apartado vamos a crear nuestra propia caja/box a partir de una MV de VirtualBox que tengamos.
+
+## Elegir una máquina virtual
+
+Lo primero que tenemos que hacer es preparar nuestra máquina virtual con una determinada configuración para poder publicar nuestro Box.
+
+- Crear una MV VirtualBox nueva o usar una que ya tengamos.
+- Configurar la red en modo automático o dinámico (DHCP).
+- Instalar OpenSSH Server en la MV.
+
+## Crear usuario con acceso SSH
+
+Vamos a crear el usuario vagrant. Esto lo hacemos para poder acceder a la máquina virtual por SSH desde fuera con este usuario. Y luego, a este usuario le agregamos una clave pública para autorizar el acceso sin clave desde Vagrant. Veamos cómo:
+
+- Ir a la MV de VirtualBox.
+- Crear el usuario vagranten la MV.
+- su
+- useradd -m vagrant
+- Poner clave "vagrant" al usuario vagrant.
+- Poner clave "vagrant" al usuario root.
+- Configuramos acceso por clave pública al usuario vagrant:
+~~~
+mkdir -pm 700 /home/vagrant/.ssh, creamos la carpeta de configuración SSH.  
+wget --no-check-certificate 'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub' -O /home/vagrant/.ssh/authorized_keys, descargamos la clave pública.
+
+chmod 0600 /home/vagrant/.ssh/authorized_keys, modificamos los permisos de la carpeta.
+
+chown -R vagrant /home/vagrant/.ssh, modificamos el propietario de la carpeta.
+~~~
+### NOTA:
+
+- Podemos cambiar los parámetros de configuración del acceso SSH.
+- Ejecuta vagrant ssh-config, para averiguar donde está la llave privada para cada máquina.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/22%20archivo%20etc.pn)
+
+~~~
+root@hostname:~# modinfo vboxguest |grep version
+version:        6.0.24
+~~~
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/23%20vboxquest.png)
+
+# Crear caja Vagrant
+
+Una vez hemos preparado la máquina virtual ya podemos crear el box.
+
+- Vamos a crear una nueva carpeta alejandro26-va6custom.d, para este nuevo proyecto vagrant.
+- VBoxManage list vms, comando de VirtualBox que muestra los nombres de nuestras MVs. Elegir una de las máquinas (VMNAME).
+- Nos aseguramos que la MV de VirtualBox VMNAME está apagada.
+- vagrant package --base VMNAME --output alejandro26.box, parar crear nuestra propia caja.
+- Comprobamos que se ha creado el fichero alejandro26.box en el directorio donde hemos ejecutado el comando.
+- vagrant box add nombre-alumno/va6custom alejandro26.box, añadimos la nueva caja creada por nosotros, al repositorio local de cajas vagrant de nuestra máquina.
+- Consultar ahora la lista de cajas Vagrant disponibles.
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/25.png)
+
+![alt text](https://github.com/AbyssC1/idp2122-alejandro/blob/main/Imagenes/T6%20P2/26.png)
+
+# Vagrantfile
+Crear un nuevo fichero Vagrantfile para usar nuestra caja.
+
+Incluir en el fichero Vagrantfile las configuraciones necesarias para:
+
+- La MV de VirtualBox debe tener el nombre vagrant26-20alejandro26.
+- La memoria RAM de la MV en VirtualBox debe ser de 2048 MiB.
